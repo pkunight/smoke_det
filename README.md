@@ -2,10 +2,11 @@
   
 本代码库包含运行环境的dockerhub链接, 镜像Dockerfile, 相关启动命令说明, 及涉及到的脚本  
   
-** DockerHub **  
+**DockerHub**  
 `docker pull nightwang/ai_model:yolo_gpu`  
   
-** 目录说明 **  
+**目录说明**  
+```
 /root/  
     workdir/  
         data/  
@@ -19,6 +20,7 @@
         train.py  训练脚本  
         predict.py  预测脚本  
         yolov8n.pt  训练初始化模型结构  
+```
 
 ### 执行步骤  
 #### STEP1 启动和进入docker镜像  
