@@ -40,6 +40,6 @@
 `python3 train.py`  
   
 #### STEP4 执行预测  
-**注意**: 需要自行修改加载best.pt模型的路径  
+**注意**: 需要自行修改加载best.pt模型的路径, 当前目录下已经放了训练完的最佳模型best.pt可以直接用  
 `python3 predict.py`  
   

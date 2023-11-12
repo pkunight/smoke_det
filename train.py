@@ -6,7 +6,7 @@ from ultralytics import YOLO
 model = YOLO('yolov8n.yaml')
 
 results = model.train(data='./smoke_det.yaml',
-                      epochs=150,
+                      epochs=1,
                       device=0,
                       pretrained=False,
                       batch=64,

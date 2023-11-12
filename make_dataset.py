@@ -6,7 +6,7 @@ import cv2
 import numpy as np
 
 print("unzip data...")
-ret = subprocess.run('unzip ./data/SmokeDet_DATA_TYY.zip', shell=True, check=True, stdout=subprocess.PIPE)
+ret = subprocess.run('cd ./data && unzip SmokeDet_DATA_TYY.zip && cd ..', shell=True, check=True, stdout=subprocess.PIPE)
 
 print("make dir...")
 ret = subprocess.run('mkdir -p ./data/SmokeDet_DATA_TYY/images/train', shell=True, check=True, stdout=subprocess.PIPE)
