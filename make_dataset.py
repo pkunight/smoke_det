@@ -51,7 +51,7 @@ for index in range(len(train_list)):
                 if len(items) != 5:
                     continue
                 items[1] = str(1.0 - float(items[1]))
-                write_file.write('\t'.join(items) + '\n')
+                write_file.write(' '.join(items) + '\n')
 
 ret = subprocess.run('rm -rf ./data/SmokeDet_DATA_TYY/train_images', shell=True, stdout=subprocess.PIPE)
 ret = subprocess.run('rm -rf ./data/SmokeDet_DATA_TYY/train_labels', shell=True, stdout=subprocess.PIPE)

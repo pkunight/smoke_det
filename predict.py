@@ -8,4 +8,6 @@ results = model.predict(source='./data/SmokeDet_DATA_TYY/test_images/',
                       device=0,
                       conf=0.1,
                       save=True,
+                      save_txt=True,
+                      save_conf=True,
                       imgsz=640)

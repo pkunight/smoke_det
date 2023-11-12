@@ -14,5 +14,8 @@ RUN mkdir /root/workdir
 COPY smoke_det.yaml /root/workdir
 COPY make_dataset.py /root/workdir
 COPY train.py /root/workdir
+COPY val.py /root/workdir
 COPY predict.py /root/workdir
+COPY result_trans.py /root/workdir
 COPY yolov8n.pt /root/workdir
+COPY best.pt /root/workdir
