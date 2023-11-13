@@ -25,11 +25,13 @@
 ### 执行步骤  
 #### STEP1 启动和进入docker镜像  
 **注意**: 数据没有放到镜像中, 需要提前下载并用-v把.zip文件挂载到/root/workdir/data  
-`docker run --name gputest --privileged -itd --net=host --ipc=host --gpus all -v /mnt/data/zhouwang/smoke_det:/root/workdir/data nightwang/ai_model:yolo_gpu`  
-  
-`docker exec -it gputest bash`  
-  
-`cd /root/workdir`  
+```
+docker run --name gputest --privileged -itd --net=host --ipc=host --gpus all -v /mnt/data/zhouwang/smoke_det:/root/workdir/data nightwang/ai_model:yolo_gpu`
+
+docker exec -it gputest bash
+
+cd /root/workdir
+```
   
 #### STEP2 划分和增强数据集  
 (1) 划分80%数据作为训练集, 20%数据作为验证集  
