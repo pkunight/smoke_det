@@ -26,7 +26,7 @@
 #### STEP1 启动和进入docker镜像  
 **注意**: 数据没有放到镜像中, 需要提前下载并用-v把.zip文件挂载到/root/workdir/data  
 ```
-docker run --name gputest --privileged -itd --net=host --ipc=host --gpus all -v /mnt/data/zhouwang/smoke_det:/root/workdir/data nightwang/ai_model:yolo_gpu`
+docker run --name gputest --privileged -itd --net=host --ipc=host --gpus all -v /mnt/data/zhouwang/smoke_det:/root/workdir/data nightwang/ai_model:yolo_gpu
 
 docker exec -it gputest bash
 
